@@ -1,0 +1,29 @@
+{
+  "name": "lttechshowcase",
+  "version": "1.0.0",
+  "description": "Pull data from web service and use it to present albums of movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyal128/ltShowcase.git"
+  },
+  "author": "Anthony Larson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonyal128/ltShowcase/issues"
+  },
+  "homepage": "https://github.com/tonyal128/ltShowcase#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "mocha": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  }
+}
