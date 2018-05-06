@@ -12,4 +12,12 @@ describe('App', function(){
             assert.isFunction(isNumber);
         })
     });
+    describe('isJson', function(){
+        it('isJson should return boolean of true', function(){
+            assert.equal(isJson(true), true);
+        });
+        it('isJson should be a function', function(){
+            assert.isFunction(isJson);
+        })
+    });
 });
