@@ -2,10 +2,10 @@
   "name": "lttechshowcase",
   "version": "1.0.0",
   "description": "Pull data from web service and use it to present albums of movies",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "mocha",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
