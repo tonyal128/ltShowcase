@@ -50,7 +50,7 @@ function displayAlbum(body,albumId){
         }
     }
     else{
-        console.log("No photos found in album " + albumId);
+        console.log(`No photos found in album ${albumId}`);
     }
 }
 
