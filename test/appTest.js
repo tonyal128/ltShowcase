@@ -23,6 +23,7 @@ describe('App', function(){
             expect(value).to.be.greaterThan(0);
         });
     });
+
     describe('isJson', function(){
         it('isJson should return boolean of false if not passed JSON', function(){
             assert.equal(isJson('not json'), false);
@@ -31,6 +32,7 @@ describe('App', function(){
             assert.isFunction(isJson);
         })
     });
+
     describe('getPhotos', function(){
         itParam('argument should be a number',[1], function(value){
             expect(value).to.be.a('number');
