@@ -15,10 +15,21 @@ module.exports = {
             console.log("Failed: JSON not passed in"); //if not JSON alert user of failure
         }
 
-        return true;
+        return false;
     },
     getPhotos: function(albumId){
-        
+        let url = `https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`; //append album id to url query string
+        https.get(url, res => {
+            res.setEncoding("utf8");
+            let body = "";
+            res.on("data", data => {
+                body += data;
+            });
+            res.on("end", () => {
+                body = isJson(body); //if the data is JSON assign to body
+                displayAlbum(body,albumId);
+            });
+        });
     },
     getAlbum: function(){
 
