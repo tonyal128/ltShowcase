@@ -41,4 +41,8 @@ describe('App', function(){
             expect(value).to.be.greaterThan(0);
         });
     });
+
+    describe('displayAlbum', function(){
+        
+    });
 });
